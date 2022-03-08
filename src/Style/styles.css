@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v28/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf) format('truetype');
+}
+a {
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background: #003824;
+  font-family: Arial;
+  margin: 0;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.inputForm {
+  background: #ffffff;
+  box-sizing: border-box;
+  padding: 4rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 4rem;
+  display: grid;
+}
+.inset {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 5px;
+}
+.navbar {
+  background-color: #363841;
+  text-align: center;
+}
+.navbar a {
+  display: inline-block;
+  color: #fff;
+  padding: 22px 22px;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+.navbar a:hover {
+  background-color: #575b69;
+  text-decoration: wavy;
+}
+.savebutton {
+  margin: 20px 10px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 13px 25px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  border: none;
+  color: white;
+  background: #185adb;
+  transition: all 0.25s ease;
+}
+.savebutton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px -10px rgba(24, 90, 219, 0.6);
+}
+#colourStyles {
+  border: none;
+  cursor: pointer;
+  width: 20vw;
+  background-color: transparent;
+}
+#colourStyles::-webkit-color-swatch {
+  border-radius: 15px;
+  border: none;
+}
+.alertError {
+  background-color: #e14d4d;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 6px;
+  text-align: center;
+}
+.alertSuccess {
+  background-color: #02af7c;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 6px;
+  text-align: center;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.container {
+  width: 60vw;
+  height: 60vh;
+  background-color: #ffffff;
+  overflow: hidden;
+  max-height: 70vh;
+  overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 1px 22px 0px rgba(0, 0, 0, 0.93);
+  border-radius: 6px;
+  border-style: none;
+  margin: auto;
+}
+.containerForm {
+  width: 40vw;
+  text-align: center;
+  height: fit-content;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 12px 12px 12px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  margin: auto;
+}
+.boxtable {
+  width: 100%;
+}
+td,
+th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+}
+input:not([type="color"]),
+select {
+  width: 20vw;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-style: inset;
+  border-radius: 20px;
+  border-color: black;
+}

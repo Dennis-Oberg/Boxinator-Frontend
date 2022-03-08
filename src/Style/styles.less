@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+@primary-color: #003824;
+@form-Colour: #ffffff;
+@main-font: "Open Sans", sans-serif;
+@genericwidth: 60vw;
+@error-colour: #e14d4d;
+@navy-blue: #2196f3;
+@success-colour: #02af7c;
+@accept-save-button-clr: #4caf50;
+
+a {
+  font-family: @main-font;
+}
+
+body {
+  background: @primary-color;
+  font-family: Arial;
+  margin: 0;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+.inputForm {
+  background: @form-Colour;
+  box-sizing: border-box;
+  padding: 4rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 4rem;
+  display: grid;
+}
+
+.inset {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 5px;
+}
+
+.navbar {
+  background-color: #363841;
+  text-align: center;
+}
+
+.navbar a {
+  display: inline-block;
+  color: #fff;
+  padding: 22px 22px;
+  text-decoration: none;
+  font-family: @main-font;
+  font-size: 18px;
+
+  &:hover {
+    background-color: #575b69;
+    text-decoration: wavy;
+  }
+}
+
+.savebutton {
+  margin: 20px 10px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 13px 25px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  border: none;
+  color: white;
+  background: #185adb;
+  transition: all 0.25s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px -10px rgba(24, 90, 219, 0.6);
+  }
+}
+
+#colourStyles {
+  border: none;
+  cursor: pointer;
+  width: 20vw;
+  background-color: transparent;
+  &::-webkit-color-swatch {
+    border-radius: 15px;
+    border: none;
+  }
+}
+.alertError {
+  background-color: @error-colour;
+  font-family: @main-font;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.alertSuccess {
+  background-color: @success-colour;
+  font-family: @main-font;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  width: @genericwidth;
+  height: 60vh;
+  background-color: @form-Colour;
+  overflow: hidden;
+  max-height: 70vh;
+  overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 1px 22px 0px rgb(0 0 0 / 93%);
+  border-radius: 6px;
+  border-style: none;
+  margin: auto;
+}
+.containerForm {
+  width: 40vw;
+  text-align: center;
+  height: fit-content;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 12px 12px 12px 12px rgb(0 0 0 / 20%);
+  border-radius: 6px;
+  margin: auto;
+}
+
+.boxtable {
+  width: 100%;
+}
+td,
+th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+}
+
+input:not([type="color"]),
+select {
+  width: 20vw;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-style: inset;
+  border-radius: 20px;
+  border-color: black;
+}
